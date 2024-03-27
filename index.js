@@ -1,7 +1,8 @@
 var allSong=[];
 var titles=[];
 var folders=[];
-var currFolder="Media-Player/songs/Arijit Singh";
+// var currFolder="Media-Player/songs/Arijit Singh";
+var currFolder="https://github.com/Kaustav2004/Media-Player/tree/b95107ff13ac7e9bfa4d50d6f147a0e740ffecb0/songs";
 var autoplay=false;
 var playAuto=document.querySelectorAll(".autoplay");
 var cont=document.querySelector(".autoplayimg");
