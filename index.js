@@ -1,7 +1,7 @@
 var allSong=[];
 var titles=[];
 var folders=[];
-var currFolder="songs/Arijit Singh";
+var currFolder='songs/Arijit Singh';
 var autoplay=false;
 var playAuto=document.querySelectorAll(".autoplay");
 var cont=document.querySelector(".autoplayimg");
