@@ -23,7 +23,7 @@ function formatTime(seconds) {
 async function getFolder(songs){
 
     // fetchong all folder from main folder
-    let folder=await fetch(`${songs}`);
+    let folder=await fetch(songs);
     let text1=await folder.text();
 
     // push text element into html format
