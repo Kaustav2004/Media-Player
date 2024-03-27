@@ -1,7 +1,7 @@
 var allSong=[];
 var titles=[];
 var folders=[];
-var currFolder="songs/Arijit Singh";
+var currFolder="Media-Player/songs/Arijit Singh";
 var autoplay=false;
 var playAuto=document.querySelectorAll(".autoplay");
 var cont=document.querySelector(".autoplayimg");
@@ -95,9 +95,9 @@ async function addFolder(){
     for (let index = 0; index < folders.length; index++) {
         let currFolder=folders[index];
         let card_container=document.querySelector(".card-cont");
-        let imgSrc="songs/"+`${currFolder}`+"/image/img.jpg";
+        let imgSrc="Media-Player/songs/"+`${currFolder}`+"/image/img.jpg";
         currFolder.replace("%20"," ");
-        let textsrc="songs/"+`${currFolder}`+"/text/textfile.json";
+        let textsrc="Media-Player/songs/"+`${currFolder}`+"/text/textfile.json";
         let a=await fetch(`${textsrc}`);
         a= await a.json();
         a=a.tittle;
@@ -213,7 +213,7 @@ function autoPlay(){
         card_image.addEventListener("click",async()=>{
             temp_div.innerHTML=card_arr[index].innerHTML;
             let name=card_arr[index].querySelector(".folder-name").innerHTML;
-            currFolder=`songs/${name}`;
+            currFolder=`Media-Player/songs/${name}`;
             await getSogs(`${currFolder}`);
             addsong();
             //  adding eventlistener on play svg on left side
@@ -222,7 +222,7 @@ function autoPlay(){
         button.addEventListener("click",async()=>{
             temp_div.innerHTML=card_arr[index].innerHTML;
             let name=card_arr[index].querySelector(".folder-name").innerHTML;
-            currFolder=`songs/${name}`;
+            currFolder=`Media-Player/songs/${name}`;
             await getSogs(`${currFolder}`);
             addsong();
             //  adding eventlistener on play svg on left side
