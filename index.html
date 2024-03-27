@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Music Player</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flex topclass">
+        <!-- left part -->
+        <div class="left flex-col">
+            <!-- contains 3 image -->
+            <div class=" left1 lefttext font-left">
+                <img src="times.svg" class="invert logo cross">
+                <img src="logo.svg" alt="logo" class="invert leftsubgap">
+                <div class="flex leftup items-center leftsubgap">
+                    <img src="home.svg" class="logo invert">
+                    <p>Home</p>
+                </div>
+                <div class="flex leftup leftsubgap">
+                    <img src="search.svg" class="logo invertgrey ">
+                    <p class="font-grey">Search</p>
+                </div>
+            </div>
+            <!-- left down part -->
+            <div class="left1 lefttext  left2 ">
+                <div class="flex library font-left items-center">
+                    <img src="library.svg" alt="library" class="logo invertgrey">
+                    <p class="font-grey" >Your Library </p>
+                </div>
+                <!-- list of library -->
+                <div class="library">
+                    <div class="l1">
+                                            
+                    </div>
+                </div>
+                <div class="flex-col font-left-bottom font-grey">
+                    <div class="flex gap">
+                       <p>Legal</p>
+                        <p>Safety & Privacy Center</p>
+                    </div>
+                    <div class="flex gap">
+                        <p>Privacy Policy</p>
+                        <p>Cookies</p>
+                        <p>About Data</p>
+                    </div>
+                    <p>Accessibility</p>
+                </div>
+                <!-- language -->
+               <div class="flex lefttext font-left languagechange">
+                  <img src="globe.svg" alt="globe" class="logolang invert">
+                  <div>English</div>
+               </div>
+            </div>
+            
+            
+        </div>
+        <!-- right part -->
+        <div class="right">
+            <!-- button part -->
+            <div class="log flex">
+                <div class="flex hw">
+                    <img id="menu" src="menu-hambuger.svg" class="invert logo" >
+                    <svg class="menu1 logo" style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 500"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" fill="white"></path></svg>
+                    <svg class="menu1 logo" style="color: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 500"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" fill="white"></path></svg>
+                </div>
+                <div>
+                    <button class="signup font-left font-grey">
+                        Sign up
+                    </button>
+                    <button class="login font-left">
+                        Log in
+                    </button>
+                </div>          
+            </div>
+            <!-- playlist -->
+            <div class="playlist">
+                    <h2 class="font-left color-white">Spotify Playlist</h2>
+                <!-- card design -->
+                <div class="flex card-cont">
+                    
+                </div>  
+            </div>
+            <!-- playbar -->
+            <div class="playbar">
+                <div class="topbar flex center justify-between">
+                    <div class="songname flex justify-between font-left font-grey items-center"></div>
+                    <div class="flex gap2">
+                        <img id="previous" src="previous.svg" class="invert">
+                        <img id="play" src="play.svg" class="invert logo">
+                        <img id="next" src="next.svg" class="invert">
+                    </div>
+                    
+                    <div class="volume flex">
+                        <img src="speaker.svg" class="invert logo mute">
+                        <div class="sound-bar">
+                            <div class="circle1"></div>
+                        </div>
+                    </div>
+                    <div class="autoplayimg">
+                        <img src="autoplay.svg" class="invert logo">
+                    </div>
+                    <div class="time flex justify-between font-left font-grey items-center"></div>
+                </div>
+                
+                <div class="track-bar center">
+                    <div class="circle"></div>
+                </div>
+
+            </div>
+            <!-- dialog box -->
+            <div class="flex justify-between font-left font-grey dialog-box">
+                <div class="gap1 flex-col">
+                    <div class="headingfooter">Company</div>
+                    <div class="f-hover">About</div>
+                    <div class="f-hover">Jobs</div>
+                    <div class="f-hover">For the Record</div>
+                </div>
+                <div class="gap1 flex-col">
+                    <div class="headingfooter">Communities</div>
+                    <div class="f-hover">For Artists</div>
+                    <div class="f-hover">Developers</div>
+                    <div class="f-hover">Advertising</div>
+                    <div class="f-hover">Investors</div>
+                    <div class="f-hover">Vendors</div>
+                </div>
+                <div class="gap1 flex-col">
+                    <div class="headingfooter">Useful links</div>
+                    <div class="f-hover">Support</div>
+                    <div class="f-hover">Free Mobile App</div>
+                </div>
+                <!-- social media -->
+                <div class="flex gap1">
+                    <div class="round">
+                        <img src="insta.svg" class="invert logo1" alt="">
+                    </div>
+                    <div class="round">
+                        <img src="twitter.svg" class="invert logo1" alt="">
+                    </div>
+                    <div class="round">
+                        <img src="facebook.svg" class="invert logo1" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>   
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+<script src="index.js"></script>
+</html>
