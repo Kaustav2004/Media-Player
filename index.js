@@ -1,7 +1,7 @@
 var allSong=[];
 var titles=[];
 var folders=[];
-var currFolder="Media-Player/songs/Arijit Singh";
+var currFolder="/songs/Arijit Singh";
 var autoplay=false;
 var playAuto=document.querySelectorAll(".autoplay");
 var cont=document.querySelector(".autoplayimg");
@@ -95,7 +95,7 @@ async function addFolder(){
     for (let index = 0; index < folders.length; index++) {
         let currFolder=folders[index];
         let card_container=document.querySelector(".card-cont");
-        let imgSrc="Media-Player/songs/"+`${currFolder}`+"/image/img.jpg";
+        let imgSrc="/songs/"+`${currFolder}`+"/image/img.jpg";
         currFolder.replace("%20"," ");
         let textsrc="Media-Player/songs/"+`${currFolder}`+"/text/textfile.json";
         let a=await fetch(`${textsrc}`);
