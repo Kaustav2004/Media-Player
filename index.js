@@ -243,7 +243,7 @@ function autoPlay(){
 
 // main function
 async function main(){
- await getFolder("Media-Player/songs");
+ await getFolder("/songs");
  await addFolder();
  await getSogs(`${currFolder}`);
  addsong();
