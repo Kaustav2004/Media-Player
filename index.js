@@ -160,7 +160,7 @@ function play(source){
          
          if(autoplay){
             let url=currentSong.src.replaceAll("%20"," ").replace(".mp3","");
-            let part=url.split(`${currFolder}/`);
+            let part=url.split(`${currFolder}`);
             let position=titles.indexOf(part[1]);
             if(position+1<titles.length){
                 currentSong=play(titles[position+1]+".mp3");
