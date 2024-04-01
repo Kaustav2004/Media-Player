@@ -95,9 +95,9 @@ async function addFolder(){
     for (let index = 0; index < folders.length; index++) {
         let currFolder=folders[index];
         let card_container=document.querySelector(".card-cont");
-        let imgSrc="songs/"+`${currFolder}`+"/image/img.jpg";
+        let imgSrc="songs/"+`${currFolder}`+"image/img.jpg";
         currFolder.replace("%20"," ");
-        let textsrc="songs/"+`${currFolder}`+"/text/textfile.json";
+        let textsrc="songs/"+`${currFolder}`+"text/textfile.json";
         let a=await fetch(`${textsrc}`);
         a= await a.json();
         a=a.tittle;
