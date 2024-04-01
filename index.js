@@ -248,7 +248,8 @@ async function main(){
  await getSogs(`${currFolder}`);
  addsong();
  let songeventlistener=document.getElementsByClassName("logo-new");
- currentSong=new Audio(`${currFolder}/`+titles[0].trim()+".mp3");
+ let temp=titles[0].trim();
+ currentSong=new Audio(`${currFolder}/`+temp+".mp3");
  currentSongName=titles[0];
 
 //  adding eventlistener on play svg on left side
