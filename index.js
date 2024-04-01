@@ -46,7 +46,7 @@ async function getFolder(songs){
 async function getSogs(currFolder){
 
     // fetching all songs from local folder
-    let song=await fetch(`/${currFolder}/`);
+    let song=await fetch(`${currFolder}/`);
 
     // converting promise to text format
     let text=await song.text();
