@@ -1,8 +1,7 @@
 var allSong=[];
 var titles=[];
 var folders=[];
-// https://github.com/Kaustav2004/Media-Player/tree/99979970b6db08cb670b8c8f7cbaa5fb49bb150e/songs
-var currFolder='songs/Arijit Singh';
+var currFolder="songs/Arijit Singh";
 var autoplay=false;
 var playAuto=document.querySelectorAll(".autoplay");
 var cont=document.querySelector(".autoplayimg");
@@ -23,7 +22,7 @@ function formatTime(seconds) {
 async function getFolder(songs){
 
     // fetchong all folder from main folder
-    let folder=await fetch(`https://github.com/Kaustav2004/Media-Player/tree/99979970b6db08cb670b8c8f7cbaa5fb49bb150e/songs`);
+    let folder=await fetch(`${songs}`);
     let text1=await folder.text();
 
     // push text element into html format
@@ -244,7 +243,7 @@ function autoPlay(){
 
 // main function
 async function main(){
- await getFolder();
+ await getFolder("songs");
  await addFolder();
  await getSogs(`${currFolder}`);
  addsong();
